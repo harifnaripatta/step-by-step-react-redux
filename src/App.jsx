@@ -1,11 +1,13 @@
 import React from "react";
 import PizzaBox from "./Components/PizzaBox";
+import { Provider } from "react-redux";
+import store from "./Components/redux/store/store";
 
 const App = () => {
   return (
-    <div>
+    <Provider store={store}>
       <PizzaBox />
-    </div>
+    </Provider>
   );
 };
 
